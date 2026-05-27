@@ -1,0 +1,138 @@
+/* App.css */
+body {
+  margin: 0;
+  background-color: #0f172a; 
+  color: #f8fafc; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.upload-card, .quiz-container {
+  background: #1e293b; 
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #e2e8f0;
+}
+
+.upload-btn, .generate-btn, .next-btn {
+  display: inline-block;
+  background: #3b82f6; 
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover, .generate-btn:hover, .next-btn:hover {
+  background: #2563eb;
+}
+
+.generate-btn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+.file-name {
+  margin: 15px 0;
+  color: #94a3b8;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 15px;
+}
+
+.quiz-header p {
+  margin: 5px 0 0 0;
+  color: #94a3b8;
+}
+
+.score-box {
+  background: #334155;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.question-card {
+  text-align: left;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.option-card {
+  background: #334155;
+  color: #f8fafc;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-card:hover:not(.correct):not(.wrong) {
+  background: #475569;
+  border-color: #64748b;
+}
+
+.option-card.correct {
+  background: #166534; 
+  border-color: #22c55e;
+}
+
+.option-card.wrong {
+  background: #7f1d1d; 
+  border-color: #ef4444;
+}
+
+.next-btn {
+  width: 100%;
+  margin: 10px 0 0 0;
+  background: #10b981;
+}
+
+.next-btn:hover {
+  background: #059669;
+}
+
+.final-score {
+  margin-top: 30px;
+  padding: 20px;
+  background: #0f172a;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b82f6;
+  line-height: 1.5;
+}
